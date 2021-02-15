@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1008355496398",
+    "project_id": "mascotas-2bcb6",
+    "storage_bucket": "mascotas-2bcb6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008355496398:android:d2172c355f6367b827db9f",
+        "android_client_info": {
+          "package_name": "com.pruebas123.petagram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008355496398-ab2mfj56rk5rji4uk4r95ejpsob8j38f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pruebas123.petagram",
+            "certificate_hash": "04b85f326ca6216bc9910e76ddcef2cfff8becff"
+          }
+        },
+        {
+          "client_id": "1008355496398-tljrib5th7cumve5crufgq3805e7uhs1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJX0bfTpVtXG5i6KLmVldrlo4ewzbg7HI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1008355496398-tljrib5th7cumve5crufgq3805e7uhs1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

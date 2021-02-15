@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityCuenta"
+    android:orientation="vertical">
+
+    <include android:id="@+id/miactionbar"
+        layout="@layout/actionbar">
+    </include>
+
+    <TextView
+        android:id="@+id/tvTituloCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/textoOscuro"
+        android:textSize="@dimen/tamanio_titulo"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"
+        android:layout_margin="@dimen/margin"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin">
+
+        <EditText
+            android:id="@+id/etCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/ingrese_usuario"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btGuardarCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guardar_cuenta"
+            android:textColor="@color/textoOscuro" />
+    </LinearLayout>
+</LinearLayout>

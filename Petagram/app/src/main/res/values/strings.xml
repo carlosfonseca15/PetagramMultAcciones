@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Petagram</string>
+    <string name="pnombre">nombre</string>
+    <string name="pcalificacion">calificacion</string>
+    <string name="pcal">5</string>
+    <string name="top5">Top5</string>
+    <string name="mcontacto">Contacto</string>
+    <string name="macerca_de">Acerca de</string>
+    <string name="titulo_contacto">Mensaje</string>
+    <string name="nombreContacto">Nombre</string>
+    <string name="nombre_completo">Nombre Completo</string>
+    <string name="email">Email</string>
+    <string name="mensaje">Mensaje</string>
+    <string name="enviar">Enviar</string>
+    <string name="biografia">Biografia</string>
+    <string name="nimbre_bio">Carlos</string>
+    <string name="estudios_bio">Ultimo curso Desarrollo de aplicaciones con Android</string>
+    <string name="cursos_bio">Cursos</string>
+    <string name="experiencias_bio">Semanas de practicas por los cursos tomados</string>
+    <string name="experiencia_bio">Experiencia</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="titulo_perfil">Max</string>
+    <string name="ingrese_usuario">Ingrese usuario</string>
+    <string name="guardar_cuenta">Guardar Cuenta</string>
+    <string name="configuar_cuenta">Configurar Cuenta</string>
+    <string name="notificacion">Recibir Notificaciones</string>
+    <string name="texto_sccion_toque">Mensaje</string>
+    <string name="texto_sccion_main">Ver Usuario</string>
+    <string name="texto_sccion_perfil">Ver mi perfil</string>
+</resources>

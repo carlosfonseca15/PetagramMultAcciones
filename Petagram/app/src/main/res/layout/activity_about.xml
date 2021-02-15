@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".ActivityAbout">
+
+    <include android:id="@+id/miactionbar"
+        layout="@layout/actionbar">
+    </include>
+
+    <TextView
+        android:id="@+id/tvTituloBiografia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/biografia"
+        android:textColor="@color/textoOscuro"
+        android:textSize="@dimen/tamanio_titulo"
+        android:textStyle="bold|italic"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginTop="@dimen/margin_bottom"
+        />
+
+    <ImageView
+        android:id="@+id/ivBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_marginBottom="@dimen/margin_bottom"/>
+    <TextView
+        android:id="@+id/tvNombreBrio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nimbre_bio"
+        android:textColor="@color/textoOscuro"
+        android:textStyle="bold|italic"
+        android:textSize="@dimen/tamanio_titulo"
+        android:layout_marginBottom="@dimen/margin_bottom"/>
+
+    <TextView
+        android:id="@+id/tvEstudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cursos_bio"
+        android:textColor="@color/textoOscuro"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/margin_bottom"/>
+
+    <TextView
+        android:id="@+id/tvExperiencias"
+        android:layout_width="@dimen/ancho_texto"
+        android:layout_height="@dimen/alto_texto"
+        android:text="@string/experiencias_bio"
+        android:layout_marginBottom="@dimen/margin_bottom"/>
+
+    <TextView
+        android:id="@+id/tvExperiencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/experiencia_bio"
+        android:textColor="@color/textoOscuro"
+        android:layout_marginBottom="@dimen/margin_bottom"/>
+
+    <TextView
+        android:id="@+id/tvEstudios"
+        android:layout_width="@dimen/ancho_texto"
+        android:layout_height="@dimen/alto_texto"
+        android:text="@string/estudios_bio"
+        android:verticalScrollbarPosition="defaultPosition"
+        tools:layout_editor_absoluteX="144dp" />
+
+
+
+</LinearLayout>

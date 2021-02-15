@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmnet.PerfilFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/circularImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin"
+            android:src="@drawable/max"
+            app:civ_border="true"
+            app:civ_border_color="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tvTituloPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/circularImage"
+            android:layout_centerHorizontal="true"
+            android:text="@string/titulo_perfil"
+            android:textSize="@dimen/tamanio_titulo_perfil"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTituloPerfil"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/gridPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

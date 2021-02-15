@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_bottom">16dp</dimen>
+    <dimen name="cardCornerRadius">4dp</dimen>
+    <dimen name="textocadviewSize">15sp</dimen>
+    <dimen name="boton_tam">50dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="elevacion_actionbar">4dp</dimen>
+    <dimen name="tamanio_titulo">24sp</dimen>
+    <dimen name="mensaje_height">180dp</dimen>
+    <dimen name="ancho_texto">200dp</dimen>
+    <dimen name="alto_texto">70dp</dimen>
+    <dimen name="tamanio_titulo_perfil">20sp</dimen>
+    <dimen name="card_img">200sp</dimen>
+</resources>

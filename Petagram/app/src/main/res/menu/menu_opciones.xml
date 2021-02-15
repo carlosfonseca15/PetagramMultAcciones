@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <item android:id="@+id/top5"
+       android:icon="@drawable/icons8_hotel_96"
+       app:showAsAction="always"
+       android:title="@string/top5">
+   </item>
+   <item android:id="@+id/mContact"
+       android:title="@string/mcontacto"
+       android:orderInCategory="100">
+   </item>
+   <item android:id="@+id/mAbout"
+       android:title="@string/macerca_de"
+       android:orderInCategory="101">
+   </item>
+   <item android:id="@+id/mCuenta"
+       android:orderInCategory="102"
+       android:title="@string/configuar_cuenta" />
+
+   <item android:id="@+id/mNotificacion"
+       android:orderInCategory="102"
+       android:title="@string/notificacion" />
+</menu>
