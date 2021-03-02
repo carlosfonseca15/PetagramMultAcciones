@@ -83,7 +83,7 @@ public class NotificationService extends FirebaseMessagingService {
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
         Intent intent_main = new Intent(this, MainActivity.class);
-        intent_main.setAction("TOQUE_FOTOS");
+        intent_main.setAction("FOLLOW_UNFOLLOW");
         PendingIntent pendingIntent_main = PendingIntent.getActivity(this, 0 , intent_main, PendingIntent.FLAG_ONE_SHOT);
 
         Intent intent_perfil = new Intent(this, ActivityAbout.class);
@@ -98,7 +98,7 @@ public class NotificationService extends FirebaseMessagingService {
                 .build();
         NotificationCompat.Action action_main =
                 new NotificationCompat.Action.Builder(R.drawable.ic_user,
-                        getString(R.string.texto_sccion_main), pendingIntent_main)
+                        "Seguir/no seguir", pendingIntent_main)
                         .build();
         NotificationCompat.Action action_perfil =
                 new NotificationCompat.Action.Builder(R.drawable.ic_customer,

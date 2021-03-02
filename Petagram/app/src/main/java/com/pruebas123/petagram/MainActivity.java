@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     ArrayList<Mascota> mascotas_sort;
+    public static int numTab = 0;
 
     private Toolbar toolbar;
     private TabLayout tabLayout;

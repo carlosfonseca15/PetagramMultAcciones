@@ -16,4 +16,6 @@ public class RestApiFirebaseAdapter {
 
         return retrofit.create(EndpointsRestApiFirebase.class);
     }
+
+
 }

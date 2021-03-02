@@ -1,6 +1,9 @@
 package com.pruebas123.petagram.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.os.Build;
+import android.transition.Explode;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +16,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.pruebas123.petagram.DetalleMascota;
 import com.pruebas123.petagram.R;
 import com.pruebas123.petagram.db.ConstructorMascotas;
 import com.pruebas123.petagram.pojo.Mascota;
@@ -26,6 +30,8 @@ import java.util.ArrayList;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+
+import static androidx.core.app.ActivityOptionsCompat.makeSceneTransitionAnimation;
 
 public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.MascotaViewHolder> implements View.OnClickListener{
 
@@ -70,11 +76,33 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
                 ConstructorMascotas constructorMascotas = new ConstructorMascotas(activity);
                 constructorMascotas.actualizarCalificacion(mascota);
 
-                Toast.makeText(activity, "Diste a " + mascota.getNombre() + "C= " + mascota.getCalificacion() + "id= " + mascota.getImagenid(), Toast.LENGTH_LONG).show();
+                Toast.makeText(activity, "Diste a like", Toast.LENGTH_LONG).show();
                 toqueFoto();
                 notifyDataSetChanged();  //hace actulizar el valor
             }
         });
+
+        mascotaViewHolder.imgFoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(activity, DetalleMascota.class);
+                intent.putExtra("url", mascota.getUrlFoto());
+                intent.putExtra("like", mascota.getCalificacion());
+
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+                    Explode explode = new Explode();
+                    explode.setDuration(1000);
+                    activity.getWindow().setExitTransition(explode);
+                    activity.startActivity(intent,
+                            makeSceneTransitionAnimation(activity, v, activity.getString(R.string.transicion_foto)).toBundle());
+
+                }else {
+                    activity.startActivity(intent);
+                }
+            }
+        });
+
+
     }
 
     @Override

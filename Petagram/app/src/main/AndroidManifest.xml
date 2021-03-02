@@ -2,9 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pruebas123.petagram">
 
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,20 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Petagram">
-        <service
-            android:name=".NotificationService"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-            <meta-data
-                android:name="com.google.firebase.messaging.default_notification_icon"
-                android:resource="@drawable/notificacion" />
-            <meta-data
-                android:name="com.google.firebase.messaging.default_notification_color"
-                android:resource="@color/colorAccent" />
-
-        </service>
+        <activity android:name=".DetalleMascota"></activity>
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -34,6 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".DetalleTop5"
             android:parentActivityName=".MainActivity">
@@ -55,23 +40,38 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".ActivityCuenta"
-             android:parentActivityName=".MainActivity">
+        <activity
+            android:name=".ActivityCuenta"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-
         <receiver android:name=".restApiFirebase.ToqueFoto">
             <intent-filter>
-                <action android:name="TOQUE_FOTO"/>
-                <action android:name="TOQUE_FOTOS"/>
-                <action android:name="TOQUE_PERFIL"/>
+                <action android:name="TOQUE_FOTO" />
+                <action android:name="TOQUE_FOTOS" />
+                <action android:name="TOQUE_PERFIL" />
             </intent-filter>
         </receiver>
 
+        <service
+            android:name=".NotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
 
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_icon"
+                android:resource="@drawable/notificacion" />
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_color"
+                android:resource="@color/colorAccent" />
+        </service>
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
 </manifest>

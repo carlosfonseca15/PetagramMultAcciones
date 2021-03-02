@@ -22,5 +22,9 @@ public interface EndpointsRestApiFirebase {
     @GET(ConstantesRestApiFirebase.KEY_TOQUE_FOTO)
     Call<UsuarioResponse> toqueFoto(@Path("id") String id, @Path("userid") String userid  );
 
-    
+    @FormUrlEncoded
+    @POST(ConstantesRestApiFirebase.KEY_FOLLOW_UNFOLLOW)
+    Call<followUnfollowResponse> followUnfollow(@Field("id_followed") String token, @Field("id_follower") String userid);
+
+
 }

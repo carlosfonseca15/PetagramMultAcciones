@@ -29,4 +29,7 @@
     <string name="texto_sccion_toque">Mensaje</string>
     <string name="texto_sccion_main">Ver Usuario</string>
     <string name="texto_sccion_perfil">Ver mi perfil</string>
+    <string name="transicion_foto">animacion foto</string>
+    <string name="nombre_base_datos">usuarios</string>
+    <string name="liked_user_id">userid</string>
 </resources>
